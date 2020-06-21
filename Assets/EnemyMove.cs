@@ -6,8 +6,8 @@ public class EnemyMove : MonoBehaviour
 {
     public Rigidbody2D rb; 
     public GameObject player; 
-    public float moveSpeed = .1f;
-    public float EnemyEngageDistance = 14.0f;
+    public float moveSpeed; // move speed (example: = .1f) 
+    public float EnemyEngageDistance; // distance to engage player (example: 14.0f)
     public bool ChasePlayer = false;
     public float angleToPlayer; 
 

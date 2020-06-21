@@ -71676,7 +71676,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 1883965257}
   player: {fileID: 1671567873}
-  moveSpeed: 0.05
+  moveSpeed: 1
   EnemyEngageDistance: 14
   ChasePlayer: 0
   angleToPlayer: 0
