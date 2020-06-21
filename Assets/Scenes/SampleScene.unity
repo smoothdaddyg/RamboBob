@@ -62479,7 +62479,7 @@ MonoBehaviour:
     type: 3}
   weapon: {fileID: 967168518}
   bulletForce: 20
-  fireRate: 0.01
+  reLoadRate: 0
 --- !u!114 &90416589
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70111,7 +70111,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 15
+  orthographic size: 9.562451
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -70616,7 +70616,7 @@ MonoBehaviour:
     type: 3}
   weapon: {fileID: 1168325793}
   bulletForce: 20
-  fireRate: 0.01
+  reLoadRate: 0
 --- !u!114 &1366531321
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71026,7 +71026,7 @@ MonoBehaviour:
     type: 3}
   weapon: {fileID: 21887111}
   bulletForce: 20
-  fireRate: 0.01
+  reLoadRate: 0
 --- !u!1 &1564486350
 GameObject:
   m_ObjectHideFlags: 0
@@ -71489,7 +71489,7 @@ MonoBehaviour:
     type: 3}
   weapon: {fileID: 1235463783}
   bulletForce: 20
-  fireRate: 0.01
+  reLoadRate: 0
 --- !u!114 &1679029083
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71661,7 +71661,7 @@ MonoBehaviour:
     type: 3}
   weapon: {fileID: 1908752101}
   bulletForce: 50
-  fireRate: 0.0001
+  reLoadRate: 1
 --- !u!114 &1883965255
 MonoBehaviour:
   m_ObjectHideFlags: 0

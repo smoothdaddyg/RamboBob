@@ -7,8 +7,8 @@ public class EnemyShoot : MonoBehaviour
 
     public GameObject prefabBullet; 
     public Transform weapon; 
-    public float bulletForce = 20f;
-    public float fireRate = 0.1f;   // amount of time player has to wait before another bullet can be fire
+    public float bulletForce;   // amount of force bullet has (example 20f)
+    public int reLoadRate;  // amount of time between shots (1 = fast, 0 = slow)
 
     private float timer; 
     private float timerAlarm;
@@ -18,12 +18,20 @@ public class EnemyShoot : MonoBehaviour
     void Start()
     {
         timer = 0f;
-        timerAlarm = Random.Range(1f, 2f);        
+
+        // set the reload rate - everytime timer alarm goes off we reload
+        if (reLoadRate == 1){
+            timerAlarm = Random.Range(0f, 2f);        
+        } else {
+            timerAlarm = Random.Range(1f, 2f);
+        }
+        
     }
 
 
     void Update() { 
 
+        // find out if enemy is currently chasing player from the EnemyMove script
         isEnemyChasingPlayer = gameObject.GetComponent<EnemyMove>().ChasePlayer;
 
         if (isEnemyChasingPlayer == true) {
@@ -49,8 +57,8 @@ public class EnemyShoot : MonoBehaviour
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
         rb.AddForce(weapon.right * bulletForce, ForceMode2D.Impulse);
         
-        // destroy bullet after a delay 
-        Destroy(bullet, 0.4f);
+        // destroy bullet we just created after a fraction of a second delay 
+        Destroy(bullet, 0.3f);
     }
 
 }
