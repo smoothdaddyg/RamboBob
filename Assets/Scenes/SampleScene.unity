@@ -71398,7 +71398,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1671567873}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.86, y: -2.17, z: 0}
+  m_LocalPosition: {x: 5, y: -2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1584742602}
@@ -71433,9 +71433,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c583b37a5ddb164ea6b203f8962b4c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerHealth: 20
+  playerHealthMax: 20
+  playerHealthCurrent: 20
+  heart: {fileID: 4659869031239822729, guid: b73d747dfb90a7a488428dccfed8ae67, type: 3}
   explosion: {fileID: 2179064971379547262, guid: b8442065bb31831468089b1ce4a7530b,
     type: 3}
+  heartEmpty: {fileID: 21300000, guid: b5d12705c3311f342b60fc5b901e41f6, type: 3}
+  heartFull: {fileID: 21300000, guid: 6bc69d7506a075840b595eb922bb7809, type: 3}
 --- !u!1 &1679029080
 GameObject:
   m_ObjectHideFlags: 0
